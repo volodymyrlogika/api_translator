@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     async function translateText() {
         const text = inputText.value.trim();
         const safeText = encodeURIComponent(text);
-        const email = 'volodymyr.logika@gmail.com'
-        const url = `https://api.mymemory.translated.net/get?q=${safeText}&langpair=${langpair}&de=${email}`;
+        const email = 'volodymyr@gmail.com'
+        const url = `https://api.mymemory.translated.net/get?q=${safeText}&langpair=uk|en&de=${email}`;
 
         const response = await fetch(url);
         const data = await response.json();
